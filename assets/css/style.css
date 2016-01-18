@@ -1,0 +1,363 @@
+/* style.css*/
+
+body {
+    background: rgba(179, 220, 237, 1);
+    background: -moz-linear-gradient(left, rgba(179, 220, 237, 1) 0%, rgba(41, 184, 229, 1) 50%, rgba(188, 224, 238, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(179, 220, 237, 1)), color-stop(50%, rgba(41, 184, 229, 1)), color-stop(100%, rgba(188, 224, 238, 1)));
+    background: -webkit-linear-gradient(left, rgba(179, 220, 237, 1) 0%, rgba(41, 184, 229, 1) 50%, rgba(188, 224, 238, 1) 100%);
+    background: -o-linear-gradient(left, rgba(179, 220, 237, 1) 0%, rgba(41, 184, 229, 1) 50%, rgba(188, 224, 238, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(179, 220, 237, 1) 0%, rgba(41, 184, 229, 1) 50%, rgba(188, 224, 238, 1) 100%);
+    background: linear-gradient(to right, rgba(179, 220, 237, 1) 0%, rgba(41, 184, 229, 1) 50%, rgba(188, 224, 238, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1);
+	padding:40px;
+}
+.login,
+.play {
+    display: block;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+p {
+    font-family: 'Chewy', cursive;
+    font-size: 51px;
+    color: #fff;
+    text-shadow: 2px 2px #3d3d3d;
+    padding: 0;
+    margin: 0;
+}
+button {
+    cursor: pointer;
+    background: #428BCA;
+    color: #fff;
+    font-family: Sans-serif;
+    font-size: 20px;
+    height: 60px;
+    width: auto;
+    line-height: 60px;
+    margin: 25px 25px;
+    text-align: center;
+    border: 0;
+    transition: all 0.3s ease 0s;
+    padding: 0 20px;
+    border: 1px solid rgba(255, 255, 255, .8);
+    border-radius: 6px;
+}
+button:hover {
+    background: #3071A9
+}
+.play {
+    display: none;
+}
+.play .textmin {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.play .profileImg {} .play .yourGifts {
+    display: block;
+    width: 800px;
+    height: 120px;
+    background: #fff;
+    margin: 0 0 10px 0;
+}
+.play .yourGifts .gift {
+    display: block;
+    float: left;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    margin: 5px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.play .yourGifts .gift .giftName {
+    position: absolute;
+    font-size: 11px;
+    bottom: -30px;
+    left: 0;
+}
+.play .yourGifts .g1 {
+    background: url('../images/gift1.png');
+    background-size: cover;
+}
+.play .yourGifts .g2 {
+    background: url('../images/gift2.png');
+    background-size: cover;
+}
+.play .yourGifts .g3 {
+    background: url('../images/gift3.png');
+    background-size: cover;
+}
+.play .yourGifts .gift:hover {
+    border: 1px solid #DC0000;
+}
+.play .yourFriends .friend {
+    display: block;
+    float: left;
+    width: 250px;
+    height: 70px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    margin: 0 10px;
+}
+.play .yourFriends .friend .profileimg {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+.play .yourFriends .friend .name {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 65px;
+}
+.play .yourFriends .friend .sendGift {
+    display: inline-block;
+    line-height: 12px;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    position: absolute;
+}
+.play .yourFriends .friend .gift1 {
+    background: url('../images/gift1.png');
+    background-size: cover;
+    position: absolute;
+    left: 50px;
+}
+.play .yourFriends .friend .gift2 {
+    background: url('../images/gift2.png');
+    background-size: cover;
+    position: absolute;
+    left: 100px;
+}
+.play .yourFriends .friend .gift3 {
+    background: url('../images/gift3.png');
+    background-size: cover;
+    position: absolute;
+    left: 150px;
+}
+.play .yourFriends .friend .sendGift:hover {
+    border: 1px solid #DC0000;
+}
+.popupContainer {
+    display: block;
+    width: 1px;
+    height: 1px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+.popup {
+    display: block;
+    width: 500px;
+    height: 150px;
+    background: #fff;
+    margin: -75px 0 0 -250px;
+    border-radius: 10px;
+}
+.popupMask {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .2);
+    top: 0;
+    left: 0;
+    display: none;
+}
+.popup .popupClose {
+    display: block;
+    position: absolute;
+    left: 250px;
+    font-family: 'Chewy', cursive;
+    font-size: 51px;
+    color: #fff;
+    cursor: pointer;
+    margin: -20px 0 0 5px;
+}
+.popup .popupClose:hover {
+    color: #F50000;
+}
+.popup #popupText {
+    text-align: center;
+    padding: 50px 0 0 0;
+    color: #000;
+    font-family: Arial;
+    text-shadow: none;
+    font-size: 31px;
+}
+#preload {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .8);
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+#fountainG {
+    top: 50%;
+    position: relative;
+    width: 234px;
+    height: 28px;
+    margin: auto;
+}
+.fountainG {
+    position: absolute;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    width: 28px;
+    height: 28px;
+    animation-name: bounce_fountainG;
+    -o-animation-name: bounce_fountainG;
+    -ms-animation-name: bounce_fountainG;
+    -webkit-animation-name: bounce_fountainG;
+    -moz-animation-name: bounce_fountainG;
+    animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-direction: normal;
+    -o-animation-direction: normal;
+    -ms-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    -moz-animation-direction: normal;
+    transform: scale(.3);
+    -o-transform: scale(.3);
+    -ms-transform: scale(.3);
+    -webkit-transform: scale(.3);
+    -moz-transform: scale(.3);
+    border-radius: 19px;
+    -o-border-radius: 19px;
+    -ms-border-radius: 19px;
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+}
+#fountainG_1 {
+    left: 0;
+    animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+    -ms-animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+}
+#fountainG_2 {
+    left: 29px;
+    animation-delay: 0.75s;
+    -o-animation-delay: 0.75s;
+    -ms-animation-delay: 0.75s;
+    -webkit-animation-delay: 0.75s;
+    -moz-animation-delay: 0.75s;
+}
+#fountainG_3 {
+    left: 58px;
+    animation-delay: 0.9s;
+    -o-animation-delay: 0.9s;
+    -ms-animation-delay: 0.9s;
+    -webkit-animation-delay: 0.9s;
+    -moz-animation-delay: 0.9s;
+}
+#fountainG_4 {
+    left: 88px;
+    animation-delay: 1.05s;
+    -o-animation-delay: 1.05s;
+    -ms-animation-delay: 1.05s;
+    -webkit-animation-delay: 1.05s;
+    -moz-animation-delay: 1.05s;
+}
+#fountainG_5 {
+    left: 117px;
+    animation-delay: 1.2s;
+    -o-animation-delay: 1.2s;
+    -ms-animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+}
+#fountainG_6 {
+    left: 146px;
+    animation-delay: 1.35s;
+    -o-animation-delay: 1.35s;
+    -ms-animation-delay: 1.35s;
+    -webkit-animation-delay: 1.35s;
+    -moz-animation-delay: 1.35s;
+}
+#fountainG_7 {
+    left: 175px;
+    animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
+    -ms-animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+}
+#fountainG_8 {
+    left: 205px;
+    animation-delay: 1.64s;
+    -o-animation-delay: 1.64s;
+    -ms-animation-delay: 1.64s;
+    -webkit-animation-delay: 1.64s;
+    -moz-animation-delay: 1.64s;
+}
+@keyframes bounce_fountainG {
+    0% {
+        transform: scale(1);
+        background-color: rgb(0, 0, 0);
+    }
+    100% {
+        transform: scale(.3);
+        background-color: rgb(255, 255, 255);
+    }
+}
+@-o-keyframes bounce_fountainG {
+    0% {
+        -o-transform: scale(1);
+        background-color: rgb(0, 0, 0);
+    }
+    100% {
+        -o-transform: scale(.3);
+        background-color: rgb(255, 255, 255);
+    }
+}
+@-ms-keyframes bounce_fountainG {
+    0% {
+        -ms-transform: scale(1);
+        background-color: rgb(0, 0, 0);
+    }
+    100% {
+        -ms-transform: scale(.3);
+        background-color: rgb(255, 255, 255);
+    }
+}
+@-webkit-keyframes bounce_fountainG {
+    0% {
+        -webkit-transform: scale(1);
+        background-color: rgb(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: scale(.3);
+        background-color: rgb(255, 255, 255);
+    }
+}
+@-moz-keyframes bounce_fountainG {
+    0% {
+        -moz-transform: scale(1);
+        background-color: rgb(0, 0, 0);
+    }
+    100% {
+        -moz-transform: scale(.3);
+        background-color: rgb(255, 255, 255);
+    }
+}
